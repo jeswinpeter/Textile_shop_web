@@ -13,6 +13,6 @@ A modern e-commerce web application for textile products designed to showcase a 
 
 Update your deployment link here:
 
-**Live URL:** [Add your deployment link here]
+**Live URL:** [https://textile-shop-web.vercel.app/]
 
 For deployment instructions and options, refer to [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying).
