@@ -71,7 +71,7 @@ export default function LandingPage() {
         className="h-full w-full snap-y snap-mandatory overflow-y-scroll scroll-smooth"
         style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
       >
-        <style dangerouslySetInnerHTML={{__html: `::-webkit-scrollbar { display: none; }`}} />
+        <style dangerouslySetInnerHTML={{__html: `::-webkit-scrollbar { display: none; } .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; } .hide-scrollbar::-webkit-scrollbar { display: none; }`}} />
         
         {/* === LANDING HERO CAROUSEL === */}
         <div id="home">
@@ -141,11 +141,11 @@ export default function LandingPage() {
               <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" />
             </div>
 
-            <main className="container mx-auto px-6 h-full flex flex-col justify-center pt-16">
-              <h2 className="text-3xl font-bold tracking-widest uppercase mb-10 text-white border-l-4 border-white pl-4">Men&apos;s Collection</h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <main className="container mx-auto px-0 md:px-6 h-full flex flex-col justify-center pt-20 md:pt-16 max-w-[100vw]">
+              <h2 className="text-2xl md:text-3xl font-bold tracking-widest uppercase mb-6 md:mb-10 text-white border-l-4 border-white pl-4 mx-6 md:mx-0">Men&apos;s Collection</h2>
+              <div className="flex overflow-x-auto md:grid md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 px-6 md:px-0 pb-8 snap-x snap-mandatory w-full hide-scrollbar">
                 {menModels.map((model) => (
-                  <Card key={model.id} className="overflow-hidden border border-white/10 hover:-translate-y-2 transition-transform duration-500 rounded-3xl group relative aspect-[3/4]">
+                  <Card key={model.id} className="min-w-[75vw] sm:min-w-[45vw] md:min-w-0 flex-shrink-0 snap-center overflow-hidden border border-white/10 hover:-translate-y-2 transition-transform duration-500 rounded-3xl group relative aspect-[3/4]">
                     <CardContent className="p-0 h-full w-full">
                       <Image
                         src={model.image}
@@ -194,11 +194,11 @@ export default function LandingPage() {
               <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" />
             </div>
 
-            <main className="container mx-auto px-6 h-full flex flex-col justify-center pt-16">
-              <h2 className="text-3xl font-bold tracking-widest uppercase mb-10 text-white border-l-4 border-white pl-4">Women&apos;s Collection</h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <main className="container mx-auto px-0 md:px-6 h-full flex flex-col justify-center pt-20 md:pt-16 max-w-[100vw]">
+              <h2 className="text-2xl md:text-3xl font-bold tracking-widest uppercase mb-6 md:mb-10 text-white border-l-4 border-white pl-4 mx-6 md:mx-0">Women&apos;s Collection</h2>
+              <div className="flex overflow-x-auto md:grid md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 px-6 md:px-0 pb-8 snap-x snap-mandatory w-full hide-scrollbar">
                 {womenModels.map((model) => (
-                  <Card key={model.id} className="overflow-hidden border border-white/10 hover:-translate-y-2 transition-transform duration-500 rounded-3xl group relative aspect-[3/4]">
+                  <Card key={model.id} className="min-w-[75vw] sm:min-w-[45vw] md:min-w-0 flex-shrink-0 snap-center overflow-hidden border border-white/10 hover:-translate-y-2 transition-transform duration-500 rounded-3xl group relative aspect-[3/4]">
                     <CardContent className="p-0 h-full w-full">
                       <Image
                         src={model.image}
@@ -252,11 +252,11 @@ export default function LandingPage() {
               <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" />
             </div>
 
-            <main className="container mx-auto px-6 h-full flex flex-col justify-center pt-16">
-              <h2 className="text-3xl font-bold tracking-widest uppercase mb-10 text-white border-l-4 border-white pl-4">Kids Collection</h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <main className="container mx-auto px-0 md:px-6 h-full flex flex-col justify-center pt-20 md:pt-16 max-w-[100vw]">
+              <h2 className="text-2xl md:text-3xl font-bold tracking-widest uppercase mb-6 md:mb-10 text-white border-l-4 border-white pl-4 mx-6 md:mx-0">Kids Collection</h2>
+              <div className="flex overflow-x-auto md:grid md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 px-6 md:px-0 pb-8 snap-x snap-mandatory w-full hide-scrollbar">
                 {kidsModels.map((model) => (
-                  <Card key={model.id} className="overflow-hidden border border-white/10 hover:-translate-y-2 transition-transform duration-500 rounded-3xl group relative aspect-[3/4]">
+                  <Card key={model.id} className="min-w-[75vw] sm:min-w-[45vw] md:min-w-0 flex-shrink-0 snap-center overflow-hidden border border-white/10 hover:-translate-y-2 transition-transform duration-500 rounded-3xl group relative aspect-[3/4]">
                     <CardContent className="p-0 h-full w-full">
                       <Image
                         src={model.image}
@@ -289,9 +289,8 @@ export default function LandingPage() {
             <div className="absolute inset-0 bg-black/40 backdrop-blur-[2px]" />
           </div>
 
-          <div className="w-full md:w-1/2 h-[70vh] md:h-full overflow-y-auto bg-zinc-900 flex flex-col justify-center px-8 md:px-16 py-16 text-white hide-scrollbar relative">
+          <div className="w-full md:w-1/2 h-[70vh] md:h-full overflow-y-auto bg-zinc-900 flex flex-col justify-start md:justify-center px-8 md:px-16 pt-20 md:py-16 text-white hide-scrollbar relative">
             <div className="absolute inset-0 opacity-10 bg-[url('/images/Men_background_2.jpg')] bg-cover mix-blend-overlay pointer-events-none" />
-            <style dangerouslySetInnerHTML={{__html: `.hide-scrollbar::-webkit-scrollbar { display: none; } .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }`}} />
             <h1 className="text-4xl md:text-5xl font-bold tracking-[0.25em] uppercase text-center mb-16 text-white drop-shadow-lg">
               URBANWEAVES
             </h1>
