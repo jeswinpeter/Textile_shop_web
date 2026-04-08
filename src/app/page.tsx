@@ -115,12 +115,12 @@ export default function LandingPage() {
         {/* === MEN SECTION === */}
         <div id="men">
           {/* Men's Cover */}
-          <section className="h-screen w-full snap-start relative flex flex-col md:flex-row bg-zinc-950">
+          <section className="h-screen w-full snap-start relative flex flex-col md:flex-row bg-zinc-900">
             <div className="w-full md:w-1/2 h-1/2 md:h-full relative">
               <Image src="/images/Men_cover.jpg" alt="Men's Collection Cover" fill className="object-cover brightness-[0.8]" />
             </div>
-            <div className="w-full md:w-1/2 h-1/2 md:h-full flex flex-col justify-center items-center p-8 text-center bg-zinc-950 relative overflow-hidden">
-               <div className="absolute inset-0 opacity-10 bg-[url('/images/Men_background_1.jpg')] bg-cover mix-blend-overlay" />
+            <div className="w-full md:w-1/2 h-1/2 md:h-full flex flex-col justify-center items-center p-8 text-center bg-zinc-900 relative overflow-hidden">
+               <div className="absolute inset-0 opacity-20 bg-[url('/images/Men_background_1.jpg')] bg-cover mix-blend-overlay" />
                <motion.div
                  initial={{ opacity: 0, scale: 0.95 }}
                  whileInView={{ opacity: 1, scale: 1 }}
@@ -137,8 +137,8 @@ export default function LandingPage() {
           <section className="h-screen w-full snap-start relative flex items-center justify-center p-8 z-10">
             {/* Background */}
             <div className="absolute inset-0 z-[-1]">
-              <Image src="/images/Men_background_1.jpg" alt="Men Background" fill className="object-cover brightness-[0.25]" />
-              <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
+              <Image src="/images/Men_background_1.jpg" alt="Men Background" fill className="object-cover brightness-[0.4]" />
+              <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" />
             </div>
 
             <main className="container mx-auto px-6 h-full flex flex-col justify-center pt-16">
@@ -169,12 +169,12 @@ export default function LandingPage() {
         {/* === WOMEN SECTION === */}
         <div id="women">
           {/* Women's Cover */}
-          <section className="h-screen w-full snap-start relative flex flex-col md:flex-row-reverse bg-zinc-950">
+          <section className="h-screen w-full snap-start relative flex flex-col md:flex-row-reverse bg-zinc-900">
             <div className="w-full md:w-1/2 h-1/2 md:h-full relative">
               <Image src="/images/Woman_cover_1.jpg" alt="Women's Collection" fill className="object-cover brightness-[0.8]" />
             </div>
             <div className="w-full md:w-1/2 h-1/2 md:h-full flex flex-col justify-center items-center p-8 text-center bg-zinc-900 relative overflow-hidden">
-               <div className="absolute inset-0 opacity-10 bg-[url('/images/Women_background_1.jpg')] bg-cover mix-blend-overlay" />
+               <div className="absolute inset-0 opacity-20 bg-[url('/images/Women_background_1.jpg')] bg-cover mix-blend-overlay" />
                <motion.div
                  initial={{ opacity: 0, scale: 0.95 }}
                  whileInView={{ opacity: 1, scale: 1 }}
@@ -190,8 +190,8 @@ export default function LandingPage() {
           {/* Women's Collection Cards */}
           <section className="h-screen w-full snap-start relative flex items-center justify-center p-8 z-10">
             <div className="absolute inset-0 z-[-1]">
-              <Image src="/images/Women_background_1.jpg" alt="Women Background" fill className="object-cover brightness-[0.25]" />
-              <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
+              <Image src="/images/Women_background_1.jpg" alt="Women Background" fill className="object-cover brightness-[0.4]" />
+              <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" />
             </div>
 
             <main className="container mx-auto px-6 h-full flex flex-col justify-center pt-16">
@@ -222,7 +222,7 @@ export default function LandingPage() {
         {/* === KIDS SECTION === */}
         <div id="kids">
           {/* Kids Cover */}
-          <section className="h-screen w-full snap-start relative flex flex-col md:flex-row bg-zinc-950">
+          <section className="h-screen w-full snap-start relative flex flex-col md:flex-row bg-zinc-900">
             <div className="w-full md:w-1/2 h-1/2 md:h-full relative flex">
                <div className="w-1/2 h-full relative">
                  <Image src="/images/Kid_cover.jpg" alt="Kids Collection 1" fill className="object-cover brightness-[0.8]" />
@@ -231,8 +231,8 @@ export default function LandingPage() {
                  <Image src="/images/Kid_cover_2.jpg" alt="Kids Collection 2" fill className="object-cover brightness-[0.8]" />
                </div>
             </div>
-            <div className="w-full md:w-1/2 h-1/2 md:h-full flex flex-col justify-center items-center p-8 text-center bg-zinc-950 relative overflow-hidden">
-               <div className="absolute inset-0 opacity-10 bg-[url('/images/Thread_background.jpg')] bg-cover mix-blend-overlay" />
+            <div className="w-full md:w-1/2 h-1/2 md:h-full flex flex-col justify-center items-center p-8 text-center bg-zinc-900 relative overflow-hidden">
+               <div className="absolute inset-0 opacity-20 bg-[url('/images/Thread_background.jpg')] bg-cover mix-blend-overlay" />
                <motion.div
                  initial={{ opacity: 0, scale: 0.95 }}
                  whileInView={{ opacity: 1, scale: 1 }}
@@ -248,8 +248,8 @@ export default function LandingPage() {
           {/* Kids Collection Cards */}
           <section className="h-screen w-full snap-start relative flex items-center justify-center p-8 z-10">
             <div className="absolute inset-0 z-[-1]">
-              <Image src="/images/Thread_background.jpg" alt="Kids Background" fill className="object-cover brightness-[0.25]" />
-              <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
+              <Image src="/images/Thread_background.jpg" alt="Kids Background" fill className="object-cover brightness-[0.4]" />
+              <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" />
             </div>
 
             <main className="container mx-auto px-6 h-full flex flex-col justify-center pt-16">
@@ -278,7 +278,7 @@ export default function LandingPage() {
         </div>
 
         {/* === ABOUT & CONTACT SECTION === */}
-        <section id="about" className="h-screen w-full snap-start relative flex flex-col md:flex-row bg-zinc-950">
+        <section id="about" className="h-screen w-full snap-start relative flex flex-col md:flex-row bg-zinc-800">
           <div className="w-full md:w-1/2 h-[30vh] md:h-full relative">
             <Image
               src="/images/Men_background_1.jpg"
@@ -289,7 +289,8 @@ export default function LandingPage() {
             <div className="absolute inset-0 bg-black/40 backdrop-blur-[2px]" />
           </div>
 
-          <div className="w-full md:w-1/2 h-[70vh] md:h-full overflow-y-auto bg-zinc-950 flex flex-col justify-center px-8 md:px-16 py-16 text-white hide-scrollbar">
+          <div className="w-full md:w-1/2 h-[70vh] md:h-full overflow-y-auto bg-zinc-900 flex flex-col justify-center px-8 md:px-16 py-16 text-white hide-scrollbar relative">
+            <div className="absolute inset-0 opacity-10 bg-[url('/images/Men_background_2.jpg')] bg-cover mix-blend-overlay pointer-events-none" />
             <style dangerouslySetInnerHTML={{__html: `.hide-scrollbar::-webkit-scrollbar { display: none; } .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }`}} />
             <h1 className="text-4xl md:text-5xl font-bold tracking-[0.25em] uppercase text-center mb-16 text-white drop-shadow-lg">
               URBANWEAVES
